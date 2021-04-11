@@ -1,0 +1,22 @@
+name: Go
+
+on:
+  push:
+    branches: [ test_ci ]
+  pull_request:
+    branches: [ test_ci ]
+
+jobs:
+  release-darwin-amd64:
+    name: Release darwin/amd64 artifacts
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Compile and release artifacts
+      uses: ngs/go-release.action@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GOOS: "darwin"
+        GOARCH: "amd64"
+        CMD_PATH: "./cmd/main.go"
+        EXTRA_FILES: "README.md"

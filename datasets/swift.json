@@ -1,28 +1,28 @@
 {
     "ingredients": [
         {
-            "name": "Cool Project",
-            "description": "A package to make cool things happen!",
-            "url": "https://github.com/cool/project",
-            "import": "CoolProject",
+            "name": "SpotifyLogin",
+            "description": "Swift framework for authenticating with the Spotify API",
+            "url": "https://github.com/spotify/SpotifyLogin",
+            "import": "SpotifyLogin",
+            "native": false,
+            "difficulty": "intermediate"
+        },
+        {
+            "name": "Progress.swift",
+            "description": "Add beautiful progress bars to your loops.",
+            "url": "https://github.com/jkandzi/Progress.swift",
+            "import": "Progress",
             "native": false,
             "difficulty": "beginner"
         },
         {
-            "name": "Another One",
-            "description": "A package that simply prints out the phrase 'another one' like DJ Khaled.",
-            "url": "https://github.com/another/one",
-            "import": "AnotherOne",
+            "name": "ImageDetect",
+            "description": "https://github.com/Feghal/ImageDetect",
+            "url": "https://github.com/Feghal/ImageDetect",
+            "import": "ImageDetect",
             "native": false,
-            "difficulty": "beginner"
-        },
-        {
-            "name": "Mind Blown",
-            "description": "A package that randomly inserts the 🤯 emoji into your project's output.",
-            "url": "https://github.com/mind/blown",
-            "import": "MindBlown",
-            "native": false,
-            "difficulty": "beginner"
+            "difficulty": "intermediate"
         }
     ]
 }

@@ -1,26 +1,26 @@
 {
     "ingredients": [
         {
-            "name": "Cool Project",
-            "description": "A package to make cool things happen!",
-            "url": "https://github.com/cool/project",
-            "import": "github.com/cool/project",
+            "name": "INI",
+            "description": "Package ini provides INI file read and write functionality in Go.",
+            "url": "https://github.com/go-ini/ini",
+            "import": "github.com/go-ini/ini",
             "native": false,
             "difficulty": "beginner"
         },
         {
-            "name": "Another One",
-            "description": "A package that simply prints out the phrase 'another one' like DJ Khaled.",
-            "url": "https://github.com/another/one",
-            "import": "github.com/another/one",
+            "name": "bbolt",
+            "description": "An embedded key/value database for Go.",
+            "url": "https://github.com/etcd-io/bbolt",
+            "import": "go.etcd.io/bbolt",
             "native": false,
             "difficulty": "beginner"
         },
         {
-            "name": "Mind Blown",
-            "description": "A package that randomly inserts the 🤯 emoji into your project's output.",
-            "url": "https://github.com/mind/blown",
-            "import": "github.com/mind/blown",
+            "name": "Image2ascii",
+            "description": " Convert image to ASCII",
+            "url": "https://github.com/qeesung/image2ascii",
+            "import": "github.com/qeesung/image2ascii",
             "native": false,
             "difficulty": "beginner"
         }

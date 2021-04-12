@@ -19,10 +19,10 @@ func LoadDataset(language LangType) (ds Dataset, _ error) {
 	switch language {
 	case GoLang:
 		raw = GoIngredients
-	case SwiftLang:
-		raw = SwiftIngredients
 	case KotlinLang:
 		raw = KotlinIngredients
+	case SwiftLang:
+		raw = SwiftIngredients
 	default:
 		return ds, fmt.Errorf("language does not have ingredients dataset")
 	}

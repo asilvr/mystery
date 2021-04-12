@@ -81,6 +81,7 @@ Create an issue and we can add it!
 The project currently supports the following languages:
 
 - Go (https://golang.org)
+- Kotlin (https://kotlinlang.org)
 - Swift (https://swift.org)
 
 With more coming soon!

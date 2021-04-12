@@ -11,7 +11,7 @@ func ImportStatement(language LangType, ingredients []Ingredient) string {
 		statement = genImportGo(ingredients)
 	case SwiftLang:
 		statement = genImportSwift(ingredients)
-    case KotlinLang:
+	case KotlinLang:
 		statement = genImportKotlin(ingredients)
 	}
 	return statement

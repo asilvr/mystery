@@ -5,8 +5,8 @@ type LangType string
 
 // Enumerators for the language types that are supported
 const (
-	NoLang    LangType = ""
-	GoLang             = "go"
-	SwiftLang          = "swift"
-	KotlinLang		   = "kotlin"
+	NoLang     LangType = ""
+	GoLang              = "go"
+	SwiftLang           = "swift"
+	KotlinLang          = "kotlin"
 )

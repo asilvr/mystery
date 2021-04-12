@@ -8,4 +8,5 @@ const (
 	NoLang    LangType = ""
 	GoLang             = "go"
 	SwiftLang          = "swift"
+	KotlinLang		   = "kotlin"
 )

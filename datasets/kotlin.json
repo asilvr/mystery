@@ -1,0 +1,28 @@
+{
+    "ingredients": [
+        {
+            "name": "TornadoFX",
+            "description": "Lightweight JavaFX Framework for Kotlin",
+            "url": "https://github.com/edvin/tornadofx",
+            "import": "tornadofx",
+            "native": false,
+            "difficulty": "intermediate"
+        },
+        {
+            "name": "Maildroid",
+            "description": "Maildroid is a small robust android library for sending emails using SMTP server",
+            "url": "https://github.com/nedimf/maildroid",
+            "import": "maildroid",
+            "native": false,
+            "difficulty": "beginner"
+        },
+        {
+            "name": "Okio",
+            "description": "A modern I/O library for Android, Kotlin, and Java.",
+            "url": "https://github.com/square/okio",
+            "import": "okio",
+            "native": false,
+            "difficulty": "intermediate"
+        }
+    ]
+}

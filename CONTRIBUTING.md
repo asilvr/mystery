@@ -8,6 +8,7 @@ place to start is by searching Google for "awesome {LANGUAGE}" for a repo of
 awesome projects in a language.
 
 - Go ([go.json](./datasets/go.json))
+- Kotlin ([kotlin.json](./datasets/kotlin.json))
 - Swift ([swift.json](./datasets/swift.json))
 
 If you want to add a new language support, we are also accepting pull requests

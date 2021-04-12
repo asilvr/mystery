@@ -28,7 +28,7 @@ func main() {
 			},
 		},
 		Flags: []cli.Flag{
-			&cli.StringFlag{Name: "language", Usage: "supported values: random, go, swift", DefaultText: "random", Destination: &flagLanguage},
+			&cli.StringFlag{Name: "language", Usage: "supported values: random, go, kotlin, swift", DefaultText: "random", Destination: &flagLanguage},
 			&cli.StringFlag{Name: "difficulty", Usage: "supported values: random, beginner, intermediate, advanced", DefaultText: "random", Destination: &flagDifficulty},
 			&cli.StringFlag{Name: "imports", Usage: "supported values: all, native, external", DefaultText: "all", Destination: &flagImports},
 		},
@@ -47,14 +47,14 @@ func main() {
 						dataset, _ := mystery.LoadDataset(mystery.GoLang)
 						ingredients := dataset.Generate("", flagImports)
 						mystery.PrintGenerate("Go", ingredients)
+					case mystery.KotlinLang:
+						dataset, _ := mystery.LoadDataset(mystery.KotlinLang)
+						ingredients := dataset.Generate("", flagImports)
+						mystery.PrintGenerate("Kotlin", ingredients)
 					case mystery.SwiftLang:
 						dataset, _ := mystery.LoadDataset(mystery.SwiftLang)
 						ingredients := dataset.Generate("", flagImports)
 						mystery.PrintGenerate("Swift", ingredients)
-					case mystery.KotlinLang:
-						dataset, _ := mystery.LoadDataset(mystery.KotlinLang)
-						ingredients  := dataset.Generate("", flagImports)
-						mystery.PrintGenerate("Kotlin", ingredients)
 					default:
 						fmt.Println(fmt.Sprintf("Error: specified language %s is not supported", flagLanguage))
 					}

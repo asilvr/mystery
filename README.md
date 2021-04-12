@@ -42,6 +42,8 @@ of project, big or small, you can make with it.
 If you want to do more custom usage, check out the help menu:
 
 ```
+$ mystery --help
+
 NAME:
    mystery - generate mystery ingredients for your next project
 

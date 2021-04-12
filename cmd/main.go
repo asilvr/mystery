@@ -21,6 +21,7 @@ func main() {
 		Name:        "mystery",
 		Usage:       "generate mystery ingredients for your next project",
 		Description: "Inspired by the Food Network show Chopped, mystery provides you with mystery ingredients to help kickstart your new or existing project.",
+		Version: 	 "v0.1.0",
 		Authors: []*cli.Author{
 			{
 				Name:  "Alex Silver",
@@ -63,6 +64,13 @@ func main() {
 			},
 		},
 	}
+
+	cli.VersionFlag = &cli.BoolFlag{
+		Name: "version",
+		Aliases: []string{"v, V"},
+		Usage: "show version",
+	}
+	
 
 	if err := app.Run(os.Args); err != nil {
 		log.Fatal(err)

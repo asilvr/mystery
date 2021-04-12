@@ -39,6 +39,34 @@ After you get your ingredients, the rest of the creativity is all up to you. We
 recommend that you try to read into each of the tools, and brainstorm what kind
 of project, big or small, you can make with it.
 
+If you want to do more custom usage, check out the help menu:
+
+```
+NAME:
+   mystery - generate mystery ingredients for your next project
+
+USAGE:
+   mystery [global options] command [command options] [arguments...]
+
+DESCRIPTION:
+   Inspired by the Food Network show Chopped, mystery provides you with mystery
+   ingredients to help kickstart your new or existing project.
+
+AUTHOR:
+   Alex Silver <alexaaronsilver@gmail.com>
+
+COMMANDS:
+   generate  generate mystery ingredients in a sample code snippet
+   help, h   Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --language value    supported values: random, go, swift (default: random)
+   --difficulty value  supported values: random, beginner, intermediate, 
+   advanced (default: random)
+   --imports value     supported values: all, native, external (default: all)
+   --help, -h          show help (default: false)
+```
+
 ## Languages
 
 The project currently supports the following languages:

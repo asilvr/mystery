@@ -71,8 +71,10 @@ GLOBAL OPTIONS:
 
 ## Download
 
-Just run:
-```wget -O - https://github.com/asilvr/mystery/blob/main/install.sh | bash```
+To get mystery installed quickly, run this:
+```
+wget -O - https://github.com/asilvr/mystery/blob/main/install.sh | bash
+```
 
 You can download the latest version of the `mystery` CLI tool in the 
 [releases](https://github.com/asilvr/mystery/releases) section. The tool is 

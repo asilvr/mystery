@@ -9,6 +9,8 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
+var version string
+
 func main() {
 	// flagLanguage stores the value passed in by the user for the language flag
 	flagLanguage := ""
@@ -21,7 +23,7 @@ func main() {
 		Name:        "mystery",
 		Usage:       "generate mystery ingredients for your next project",
 		Description: "Inspired by the Food Network show Chopped, mystery provides you with mystery ingredients to help kickstart your new or existing project.",
-		Version: 	 "v0.1.0",
+		Version: 	 version,
 		Authors: []*cli.Author{
 			{
 				Name:  "Alex Silver",

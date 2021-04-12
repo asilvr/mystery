@@ -9,3 +9,6 @@ var GoIngredients []byte
 
 //go:embed datasets/swift.json
 var SwiftIngredients []byte
+
+//go:embed datasets/kotlin.json
+var KotlinIngredients []byte

@@ -51,10 +51,13 @@ func main() {
 						dataset, _ := mystery.LoadDataset(mystery.SwiftLang)
 						ingredients := dataset.Generate("", flagImports)
 						mystery.PrintGenerate("Swift", ingredients)
+					case mystery.KotlinLang:
+						dataset, _ := mystery.LoadDataset(mystery.KotlinLang)
+						ingredients  := dataset.Generate("", flagImports)
+						mystery.PrintGenerate("Kotlin", ingredients)
 					default:
 						fmt.Println(fmt.Sprintf("Error: specified language %s is not supported", flagLanguage))
 					}
-
 					return nil
 				},
 			},

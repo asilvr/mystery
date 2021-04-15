@@ -6,6 +6,16 @@ Mystery is a tool to generate mystery ingredients for your next project. It was
 inspired by the Food Network show Chopped, since in the show, contestants have
 to prepare a dish that incorporates a basket of mystery ingredients.
 
+## Download
+To get mystery installed quickly, run this:
+```
+wget -O - https://github.com/asilvr/mystery/blob/main/install.sh | bash
+```
+Or, you can download the latest version of the `mystery` CLI tool in the 
+[releases](https://github.com/asilvr/mystery/releases) section. The tool is 
+built for most common operating systems and CPU architectures. Don't see yours?
+Create an issue and we can add it!
+
 ## Usage
 
 Using Mystery is simple. Just run the `mystery` program in your terminal.
@@ -68,16 +78,6 @@ GLOBAL OPTIONS:
    --imports value     supported values: all, native, external (default: all)
    --help, -h          show help (default: false)
 ```
-
-## Download
-To get mystery installed quickly, run this:
-```
-wget -O - https://github.com/asilvr/mystery/blob/main/install.sh | bash
-```
-You can download the latest version of the `mystery` CLI tool in the 
-[releases](https://github.com/asilvr/mystery/releases) section. The tool is 
-built for most common operating systems and CPU architectures. Don't see yours?
-Create an issue and we can add it!
 
 ## Languages
 

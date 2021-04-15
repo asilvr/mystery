@@ -8,6 +8,7 @@ import (
 	"github.com/asilvr/mystery"
 	"github.com/urfave/cli/v2"
 )
+var version string
 
 func main() {
 	// flagLanguage stores the value passed in by the user for the language flag
@@ -21,6 +22,7 @@ func main() {
 		Name:        "mystery",
 		Usage:       "generate mystery ingredients for your next project",
 		Description: "Inspired by the Food Network show Chopped, mystery provides you with mystery ingredients to help kickstart your new or existing project.",
+		Version: 	  version,
 		Authors: []*cli.Author{
 			{
 				Name:  "Alex Silver",
@@ -62,6 +64,12 @@ func main() {
 				},
 			},
 		},
+	}
+
+	cli.VersionFlag = &cli.BoolFlag{
+		Name: "version",
+		Aliases: []string{"v, V"},
+		Usage: "show version",
 	}
 
 	if err := app.Run(os.Args); err != nil {

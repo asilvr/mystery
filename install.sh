@@ -47,12 +47,16 @@ download(){
     #Download latest release
     tag_version=$(curl -s https://api.github.com/repos/asilvr/mystery/releases/latest | grep "tag_name" | cut -d : -f 2,3 | tr -d \" | tr -d \,)
     echo "${GREEN}Downloading mystery $tag_version${NC}"
-    curl -s https://api.github.com/repos/asilvr/mystery/releases/latest \
-    | grep "browser_download_url.*_$arch_name.tar.gz" \
-    | cut -d : -f 2,3 \
-    | tr -d \" \
-    | wget -qi -
+    package_link=$(curl -s https://api.github.com/repos/asilvr/mystery/releases/latest | grep "browser_download_url.*_$arch_name.tar.gz" | cut -d : -f 2,3 | tr -d \")
+    package_name=mystery_${tag_version//" "}_darwin_$1.tar.gz
     
+    if [[ -z tag_version ]] 
+    then
+        echo "${RED}Error: Github isn't available, please turn off all of your proxies${NC}"
+        exit 1
+    else
+        curl -L $package_link > $package_name --silent
+    fi
     
     if [[ $? -eq 0 ]]
     then 

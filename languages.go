@@ -10,4 +10,5 @@ const (
 	GoLang              = "go"
 	KotlinLang          = "kotlin"
 	SwiftLang           = "swift"
+	PythonLang          = "python"
 )

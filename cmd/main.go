@@ -8,6 +8,7 @@ import (
 	"github.com/asilvr/mystery"
 	"github.com/urfave/cli/v2"
 )
+
 var version string
 
 func main() {
@@ -22,7 +23,7 @@ func main() {
 		Name:        "mystery",
 		Usage:       "generate mystery ingredients for your next project",
 		Description: "Inspired by the Food Network show Chopped, mystery provides you with mystery ingredients to help kickstart your new or existing project.",
-		Version: 	  version,
+		Version:     version,
 		Authors: []*cli.Author{
 			{
 				Name:  "Alex Silver",
@@ -57,6 +58,10 @@ func main() {
 						dataset, _ := mystery.LoadDataset(mystery.SwiftLang)
 						ingredients := dataset.Generate("", flagImports)
 						mystery.PrintGenerate("Swift", ingredients)
+					case mystery.PythonLang:
+						dataset, _ := mystery.LoadDataset(mystery.PythonLang)
+						ingredients := dataset.Generate("", flagImports)
+						mystery.PrintGenerate("Python", ingredients)
 					default:
 						fmt.Println(fmt.Sprintf("Error: specified language %s is not supported", flagLanguage))
 					}
@@ -67,9 +72,9 @@ func main() {
 	}
 
 	cli.VersionFlag = &cli.BoolFlag{
-		Name: "version",
+		Name:    "version",
 		Aliases: []string{"v, V"},
-		Usage: "show version",
+		Usage:   "show version",
 	}
 
 	if err := app.Run(os.Args); err != nil {

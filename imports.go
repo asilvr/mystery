@@ -13,6 +13,8 @@ func ImportStatement(language LangType, ingredients []Ingredient) string {
 		statement = genImportKotlin(ingredients)
 	case SwiftLang:
 		statement = genImportSwift(ingredients)
+	case PythonLang:
+		statement = genImportSwift(ingredients)
 	}
 	return statement
 }
@@ -38,6 +40,15 @@ func genImportKotlin(ingredients []Ingredient) string {
 
 // genImportSwift is a helper to generate Swift import statements
 func genImportSwift(ingredients []Ingredient) string {
+	statement := ""
+	for _, ingredient := range ingredients {
+		statement = fmt.Sprintf("%simport %s\n", statement, ingredient.Import)
+	}
+	return statement
+}
+
+// genImportPython is a helper to generate Python import statements
+func genImportPython(ingredients []Ingredient) string {
 	statement := ""
 	for _, ingredient := range ingredients {
 		statement = fmt.Sprintf("%simport %s\n", statement, ingredient.Import)
